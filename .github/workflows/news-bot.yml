@@ -1,0 +1,14 @@
+name: Forex News Bot
+
+on:
+  workflow_dispatch:
+
+jobs:
+  send-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Telegram Message
+        run: |
+          curl -s -X POST https://api.telegram.org/bot8767715942:AAHYJZXrrf99dLyAcmbjTvpuQJ0ayjhEMQw/sendMessage \
+          -d chat_id=7357715025 \
+          -d text="✅ Bot ɗinka yana aiki! EPHIC TRADER News Bot is ready."
