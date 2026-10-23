@@ -2,7 +2,7 @@ name: Forex News Bot
 
 on:
   schedule:
-    - cron: "0 6 * * 1-5"   # Every Monday to Friday at 6 AM UTC
+    - cron: "0 6 * * 1-5"
   workflow_dispatch:
 
 jobs:
@@ -13,5 +13,4 @@ jobs:
         run: |
           curl -s -X POST https://api.telegram.org/bot8767715942:AAHYJZXrrf99dLyAcmbjTvpuQJ0ayjhEMQw/sendMessage \
           -d chat_id=7357715025 \
-          -d text="📢 *EPHIC TRADER News Bot*%0A%0AGood morning!%0ACheck today's high impact news on Forex Factory.%0A%0AStay disciplined.%0A— EPHIC TRADER 🎯" \
-          -d parse_mode=Markdown
+          -d text="📢 EPHIC TRADER News Bot%0A%0AGood morning!%0ACheck today's high impact news on Forex Factory.%0A%0AStay disciplined.%0A— EPHIC TRADER 🎯"
